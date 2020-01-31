@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import logo from './assets/svg/logo.svg';
 import './App.css';
+
+// Redux
+import { Provider } from 'react-redux';
+import store from './store';
 
 class App extends Component {
   constructor () {
@@ -32,14 +36,16 @@ class App extends Component {
 
   render () {
     return (
-      <div className="App" onScroll={this.update}>
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p style={{ fontSize: this.state.position * 0.1 }}>
-            Profile goes here...
-          </p>
-        </header>
-      </div>
+      <Provider store={store}>
+        <div className="App" onScroll={this.update}>
+          <header className="App-header">
+            <img src={logo} className="App-logo" alt="logo" />
+            <p style={{ fontSize: this.state.position * 0.1 }}>
+              Profile goes here...
+            </p>
+          </header>
+        </div>
+      </Provider>
     );
   }
 }
