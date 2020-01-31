@@ -1,10 +1,19 @@
 import React, { Component } from 'react';
-import logo from './assets/svg/logo.svg';
-import './App.css';
+// import logo from './assets/svg/logo.svg';
+
+// Routing
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 // Redux
 import { Provider } from 'react-redux';
 import store from './store';
+
+// Styling
+import './App.css';
+
+// Components
+import Projects from './components/Projects';
+import Skills from './components/Skills';
 
 class App extends Component {
   constructor () {
@@ -37,14 +46,15 @@ class App extends Component {
   render () {
     return (
       <Provider store={store}>
-        <div className="App" onScroll={this.update}>
-          <header className="App-header">
-            <img src={logo} className="App-logo" alt="logo" />
-            <p style={{ fontSize: this.state.position * 0.1 }}>
-              Profile goes here...
-            </p>
-          </header>
-        </div>
+        <Router>
+          <div className="App" onScroll={this.update}>
+            <h1>This is the main app page..Navbar coming soon!</h1>
+            <Switch>
+              <Route exact path='/projects' component={ Projects }></Route>
+              <Route exact path='/skills' component={ Skills }></Route>
+            </Switch>
+          </div>
+        </Router>
       </Provider>
     );
   }
