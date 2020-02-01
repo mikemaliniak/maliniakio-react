@@ -12,6 +12,7 @@ import store from './store';
 import './App.css';
 
 // Components
+import Home from './components/Home'
 import Projects from './components/Projects';
 import Skills from './components/Skills';
 
@@ -49,6 +50,7 @@ class App extends Component {
         <Router>
           <div className="App" onScroll={this.update}>
             <h1>This is the main app page..Navbar coming soon!</h1>
+            <Route  exact path='/' component={Home} />
             <Switch>
               <Route exact path='/projects' component={ Projects }></Route>
               <Route exact path='/skills' component={ Skills }></Route>
