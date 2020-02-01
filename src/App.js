@@ -13,6 +13,7 @@ import './App.css';
 
 // Components
 import Home from './components/Home'
+import Navbar from './components/Navbar';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
 
@@ -49,7 +50,9 @@ class App extends Component {
       <Provider store={store}>
         <Router>
           <div className="App" onScroll={this.update}>
-            <h1>This is the main app page..Navbar coming soon!</h1>
+            {/* Navigation */}
+            <Navbar />
+            {/* Routes Start Here */}
             <Route  exact path='/' component={Home} />
             <Switch>
               <Route exact path='/projects' component={ Projects }></Route>
