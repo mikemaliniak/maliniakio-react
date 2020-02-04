@@ -14,6 +14,7 @@ import './App.css';
 // Components
 import Home from './components/Home'
 import Navbar from './components/Navbar';
+import Project from './components/Project';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
 
@@ -56,6 +57,7 @@ class App extends Component {
             <Route  exact path='/' component={Home} />
             <Switch>
               <Route exact path='/projects' component={ Projects }></Route>
+              <Route exact path='/project/:id' render={routeParams => <Project {...routeParams}/>}></Route>
               <Route exact path='/skills' component={ Skills }></Route>
             </Switch>
           </div>
