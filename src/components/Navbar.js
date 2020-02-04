@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { NavLink } from 'react-router-dom';
 import { connect } from 'react-redux';
 
 function mapStateToProps(state) {
@@ -11,7 +12,8 @@ class Navbar extends Component {
     render() {
         return (
             <div>
-                This will be the navbar
+                <NavLink to="/projects" activeClassName="is-active">Projects</NavLink>
+                <NavLink to="/skills" activeClassName="is-active">Skills</NavLink>
             </div>
         );
     }
