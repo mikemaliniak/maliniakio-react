@@ -1,0 +1,9 @@
+@import 'base';
+@import 'fonts';
+@import 'layout';
+
+.home {
+    height: 50vh;
+    background-image: url('./img/home.jpg');
+    background-size: cover;
+}

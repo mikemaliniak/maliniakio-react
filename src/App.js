@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 // import logo from './assets/svg/logo.svg';
+import './styles/App.scss';
 
 // Routing
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
@@ -14,6 +15,7 @@ import './App.css';
 // Components
 import Home from './components/Home'
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import Project from './components/Project';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
@@ -61,6 +63,7 @@ class App extends Component {
               <Route exact path='/skills' component={ Skills }></Route>
             </Switch>
           </div>
+          <Footer />
         </Router>
       </Provider>
     );
