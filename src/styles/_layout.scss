@@ -1,8 +1,17 @@
-.l__full-width {
+.l__wrapper {
     width: 100%;
 }
 
-.l__centered {
+.l__container {
     margin: 0 auto;
-    max-width: 1200px; // TODO: make this a variable
+    max-width: $max-width; // TODO: make this a variable
+    display: flex;
+    flex-direction: column;
+    @include respond-to('small') {
+        flex-direction: row;
+    }
+}
+
+.l__col {
+
 }
