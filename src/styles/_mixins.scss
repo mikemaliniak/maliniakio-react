@@ -2,7 +2,7 @@
 /// @author Hugo Giraudel
 /// @param {String} $breakpoint - Breakpoint name
 /// @require $breakpoints
-@mixin respond-to($breakpoint) {
+@mixin media($breakpoint) {
     // If the key exists in the map
     @if map-has-key($breakpoints, $breakpoint) {
       // Prints a media query based on the value
@@ -22,7 +22,7 @@
 // .selector {
 //     color: red;
 
-//     @include respond-to('small') {
+//     @include media('small') {
 //         color: blue;
 //     }
 // }
