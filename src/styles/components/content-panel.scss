@@ -11,3 +11,16 @@
 .content-panel__col {
     padding: 2rem 1rem;
 }
+
+.content-panel__col--text-outer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.content-panel__col--text-inner {
+    width: 100%;
+    text-align: left;
+    @include media('sm') {
+        width: 50%;
+    }
+}
