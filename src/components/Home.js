@@ -2,20 +2,18 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import logo from '../assets/svg/logo.svg'
 
-function mapStateToProps(state) {
-    return {
-
-    };
-}
-
 class Home extends Component {
     render() {
         return (
             <div>
-                <section className="home l-wrapper">
-                    header
+                <section className="hero__wrapper l-wrapper">
+                    <div className="hero__overlay"></div>
+                    <h1 className="hero__title">
+                        <span className="hero__title--sub">ambition is the first step towards</span>
+                        <span className="hero__title--main">success</span>
+                    </h1>
                 </section>
-                <section>
+                <section className="l-wrapper">
                     <div className="l__container">
                         <div className="l__col">
                             <h2>About me</h2>
@@ -35,6 +33,10 @@ class Home extends Component {
     }
 }
 
-export default connect(
-    mapStateToProps,
-)(Home);
+function mapStateToProps(state) {
+    return {
+
+    };
+}
+
+export default connect(mapStateToProps,{})(Home);
