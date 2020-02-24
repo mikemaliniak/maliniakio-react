@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import logo from '../assets/svg/logo.svg'
+import logo from '../assets/svg/logo.svg';
+// Components
+import Hero from './Hero';
 
 class Home extends Component {
     render() {
+        const heroProps = {
+            mainTitle: "success",
+            subTitle: "ambition is the first step towards"
+        }
         return (
             <div>
-                <section className="hero__wrapper l-wrapper">
-                    <div className="hero__overlay"></div>
-                    <h1 className="hero__title">
-                        <span className="hero__title--sub">ambition is the first step towards</span>
-                        <span className="hero__title--main">success</span>
-                    </h1>
-                </section>
+                <Hero subTitle={"asdfm"} mainTitle={"Mike"} />
                 <section className="l-wrapper">
                     <div className="l__container content-panel__wrapper">
                         <div className="content-panel__col content-panel__col--text-outer">
