@@ -11,10 +11,10 @@ function mapStateToProps(state) {
 class Navbar extends Component {
     render() {
         return (
-            <div>
+            <nav>
                 <NavLink to="/projects" activeClassName="is-active">Projects</NavLink>
                 <NavLink to="/skills" activeClassName="is-active">Skills</NavLink>
-            </div>
+            </nav>
         );
     }
 }
