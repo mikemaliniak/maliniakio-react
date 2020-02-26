@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import logo from '../assets/svg/logo.svg';
 // Components
 import Hero from './Hero';
 import ContentPanel from './ContentPanel';
@@ -16,7 +15,8 @@ class Home extends Component {
                 <Hero {...heroProps} />
                 <ContentPanel />
                 <section>
-                    how I can help
+                    <img src={process.env.PUBLIC_URL + '/assets/images/image01.jpg'} />
+                    <img src={process.env.PUBLIC_URL + '/assets/images/image02.webp'} />
                 </section>
             </div>
         );
