@@ -4,10 +4,8 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 // Redux + Actions
-import { Provider } from 'react-redux';
 import { connect } from 'react-redux';
 import { getProjects } from './actions';
-import store from './store';
 
 // Styling
 import './styles/App.scss';
@@ -53,7 +51,6 @@ class App extends Component {
 
   render () {
     return (
-      <Provider store={store}>
         <Router>
           <div className="App" onScroll={this.update}>
             {/* Navigation */}
@@ -68,7 +65,6 @@ class App extends Component {
           </div>
           <Footer />
         </Router>
-      </Provider>
     );
   }
 }
