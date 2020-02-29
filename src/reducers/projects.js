@@ -1,8 +1,7 @@
 import { GET_PROJECTS } from '../actions/types';
+import projects from '../data/projects';
 
-const intialState = [];
-
-export default function(state = intialState, action) {
+export default function(state = projects, action) {
     const { type, payload } = action;
     switch(type) {
         case GET_PROJECTS:
