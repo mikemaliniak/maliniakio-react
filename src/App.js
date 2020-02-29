@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
-// import logo from './assets/svg/logo.svg';
-import './styles/App.scss';
 
 // Routing
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-// Redux
+// Redux + Actions
 import { Provider } from 'react-redux';
+import { connect } from 'react-redux';
+import { getProjects } from './actions';
 import store from './store';
 
 // Styling
+import './styles/App.scss';
 import './App.css';
 
 // Components
@@ -32,6 +33,8 @@ class App extends Component {
   }
 
   componentDidMount() {
+    // Get Projects
+    this.props.getProjects();
     window.addEventListener('scroll', this.handleScroll);
   }
 
@@ -70,4 +73,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default connect(null, { getProjects })(App);

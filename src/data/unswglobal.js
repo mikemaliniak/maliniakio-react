@@ -1,3 +1,4 @@
 export const unswglobal = {
-    id: 'unswglobal'
+    id: 2,
+    name: 'unswglobal'
 }

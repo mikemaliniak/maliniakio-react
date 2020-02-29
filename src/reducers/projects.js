@@ -1,11 +1,12 @@
 import { GET_PROJECTS } from '../actions/types';
-import projects from '../data/projects';
 
-export default function(state = projects, action) {
+const intialState = [];
+
+export default function(state = intialState, action) {
     const { type, payload } = action;
     switch(type) {
         case GET_PROJECTS:
-            return [...state, payload]
+            return [...state, ...payload]
         default:
             return state;
     }
