@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from '../assets/svg/logo.svg';
 
 const ContentPanel = () => {
     return ( 
@@ -14,7 +13,7 @@ const ContentPanel = () => {
                 </div>
                 <div className="content-panel__col">
                 <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. </p>
-                    <img src={logo} alt=""/>
+                    <img src={process.env.PUBLIC_URL + '/assets/svg/logo.svg'} alt=""/>
                 </div>
             </div>
         </section>

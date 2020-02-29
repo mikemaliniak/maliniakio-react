@@ -2,12 +2,6 @@ import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import { connect } from 'react-redux';
 
-function mapStateToProps(state) {
-    return {
-
-    };
-}
-
 class Navbar extends Component {
     render() {
         return (
@@ -17,6 +11,12 @@ class Navbar extends Component {
             </nav>
         );
     }
+}
+
+function mapStateToProps(state) {
+    return {
+
+    };
 }
 
 export default connect(

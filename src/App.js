@@ -59,7 +59,7 @@ class App extends Component {
             <Route  exact path='/' component={Home} />
             <Switch>
               <Route exact path='/projects' component={ Projects }></Route>
-              <Route exact path='/project/:id' render={routeParams => <Project {...routeParams}/>}></Route>
+              <Route exact path='/project/:id' render={routeParams => <Project {...routeParams} />}></Route>
               <Route exact path='/skills' component={ Skills }></Route>
             </Switch>
           </div>

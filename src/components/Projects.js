@@ -11,7 +11,8 @@ class Projects extends Component {
     render() {
         return (
             <div>
-                this is the projects component
+                this is the projects component:
+                {this.props.match.params.project}
             </div>
         );
     }
