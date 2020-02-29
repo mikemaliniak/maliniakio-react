@@ -7,7 +7,12 @@ class Project extends Component {
         const routeName = this.props.match.params.name
         const currProject = projects.find(project => project.name === routeName);
         if (currProject) {
-            return <h1>{currProject.name}</h1>
+            return (
+                <div>
+                    <h1>{currProject.name}</h1>
+                    <img src={`${process.env.PUBLIC_URL}/assets/images/${currProject.name}.jpg`} alt=""/>
+                </div>
+            )
         } else {
             return <h1>No Bueno</h1>
         }
