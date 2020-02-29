@@ -1,4 +1,4 @@
-import { GET_PROJECT, GET_PROJECTS } from './types';
+import { GET_PROJECTS } from './types';
 import projects from '../data/projects';
 
 
