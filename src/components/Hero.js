@@ -1,15 +1,19 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+// Material-UI Componenets and styling
+import { withStyles } from '@material-ui/styles';
+import clsx from 'clsx';
+import styles from './styles/Hero'; 
 
 class Hero extends Component {
     render () {
-        const {subTitle, mainTitle} = this.props;
+        const {classes, subTitle, mainTitle} = this.props;
         return ( 
-                <section className="hero__wrapper l-wrapper">
-                    <div className="hero__overlay"></div>
-                    <h1 className="hero__title">
-                        <span className="hero__title--sub">{subTitle}</span>
-                        <span className="hero__title--main">{mainTitle}</span>
+                <section className={clsx(classes.root, 'l-wrapper')}>
+                    <div className={classes.overlay}></div>
+                    <h1 className={classes.title}>
+                        <span className={classes.titleSub}>{subTitle}</span>
+                        <span className={classes.titleMain}>{mainTitle}</span>
                     </h1>
                 </section>
             )
@@ -21,4 +25,4 @@ Hero.propTypes = {
     mainTitle: PropTypes.string,
 }
  
-export default Hero;
+export default withStyles(styles)(Hero);

@@ -1,14 +1,13 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { NavLink }from 'react-router-dom';
 import PropTypes from 'prop-types';
+// Material-UI Componenets and styling
+import { withStyles } from '@material-ui/styles'; 
 import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import CssBaseline from '@material-ui/core/CssBaseline';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import Slide from '@material-ui/core/Slide';
-// Icons
 import GitHubIcon from '@material-ui/icons/GitHub';
+import styles from './styles/NavBar'; 
 
 function HideOnScroll(props) {
   const { children } = props;
@@ -32,27 +31,20 @@ HideOnScroll.propTypes = {
   window: PropTypes.func,
 };
 
-export default function HideAppBar(props) {
-  return (
-    <Fragment>
-      <CssBaseline />
-      <HideOnScroll {...props}>
-        <AppBar>
-          <Toolbar>
-            <Typography variant="h6">Scroll to Hide App Bar</Typography>
-            <nav>
+function NavBar(props) {
+    const { classes } = props;
+    return (
+        <HideOnScroll {...props}>
+            <AppBar component={"nav"} className={classes.root}>
                 <NavLink to={'/'}>home</NavLink>
                 <NavLink to={'/projects'}>projects</NavLink>
                 <NavLink to={'/skills'}>skills</NavLink>
                 <a href="https://github.com/mikemaliniak" target="_blank">
                     <GitHubIcon />
                 </a>
-            </nav>
-
-          </Toolbar>
-        </AppBar>
-      </HideOnScroll>
-      <Toolbar />
-    </Fragment>
-  );
+            </AppBar>
+        </HideOnScroll>
+    );
 }
+
+export default withStyles(styles)(NavBar);

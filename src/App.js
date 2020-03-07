@@ -8,7 +8,7 @@ import { connect } from 'react-redux';
 import { getProjects } from './actions';
 
 // Styling
-import './styles/App.scss';
+import './components/styles/App.scss';
 import './App.css';
 
 // Components
