@@ -4,7 +4,7 @@ const { palette: { primary } } = theme;
 
 export default {
     root: {
-        backgroundColor: primary.main,
+        backgroundColor: 'white',
         '& a': {
             color: primary.contrastText,
             textDecoration: 'none',

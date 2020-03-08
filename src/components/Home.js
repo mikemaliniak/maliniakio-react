@@ -15,8 +15,8 @@ class Home extends Component {
                 <Hero {...heroProps} />
                 <ContentPanel />
                 <section>
-                    <img src={process.env.PUBLIC_URL + '/assets/images/image01.jpg'} />
-                    <img src={process.env.PUBLIC_URL + '/assets/images/image02.webp'} />
+                    <img src={process.env.PUBLIC_URL + '/assets/images/image01.jpg'} style={{width: '100%'}}/>
+                    <img src={process.env.PUBLIC_URL + '/assets/images/image02.webp'} style={{width: '100%'}}/>
                 </section>
             </div>
         );

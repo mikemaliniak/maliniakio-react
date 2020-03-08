@@ -1,4 +1,4 @@
-import Background from './img/home.jpg';
+import Background from './img/Clouds.jpg';
 
 export default {
 
@@ -21,7 +21,7 @@ export default {
         bottom: '0',
         height: '100%',
         width: '100',
-        backgroundColor: '#333',
+        // backgroundColor: '#333',
         opacity: '0.7'
     },
     
