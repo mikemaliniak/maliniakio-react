@@ -11,14 +11,32 @@ export default {
             height: '4px',
             marginBottom: '5px',
             position: 'relative',
-            background: '#cdcdcd',
+            background: '#232323',
             borderRadius: '3px',            
-            zIndex: 1,
             transformOrigin: '4px 0px',            
-            transition: 'transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease'
+            transition: 'transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease',
+
+            '&:first-child': {
+                transformOrigin: '0% 0%'
+            },
+
+            '&:nth-last-child(2)': {
+                transformOrigin: '0% 100%'
+            }
         }
     },
     menuOpen: {
-        outline: '1px solid red'
+        '& span': {
+            transform: 'rotate(45deg) translate(0px, -5px)',
+
+            '&:nth-last-child(2)': {
+                opacity: 0,
+                transform: 'rotate(0deg) scale(0.2, 0.2)' 
+            },
+
+            '&:last-of-type': {
+                transform: 'rotate(-45deg) translate(0, -1px)'
+            }
+        },
     }
 }
