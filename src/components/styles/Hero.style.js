@@ -1,11 +1,6 @@
 import Background from './img/home.jpg';
-import { colors as c } from './_variables';
 
 export default {
-
-    root: {
-        backgroundColor: 'coral'
-    },
 
     root: {
         height: '80vh',
@@ -26,13 +21,13 @@ export default {
         bottom: '0',
         height: '100%',
         width: '100',
-        backgroundColor: c.$black,
+        backgroundColor: 'red',
         opacity: '0.7'
     },
     
     title: {
         textTransform: 'uppercase',
-        color: c.$white,
+        color: 'red',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',

@@ -2,12 +2,12 @@ import React from 'react';
 import { NavLink }from 'react-router-dom';
 import PropTypes from 'prop-types';
 // Material-UI Componenets and styling
-import { withStyles } from '@material-ui/styles'; 
+import { withStyles } from '@material-ui/styles';
 import AppBar from '@material-ui/core/AppBar';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import Slide from '@material-ui/core/Slide';
 import GitHubIcon from '@material-ui/icons/GitHub';
-import styles from './styles/NavBar'; 
+import styles from './styles/Navbar.style'; 
 
 function HideOnScroll(props) {
   const { children } = props;

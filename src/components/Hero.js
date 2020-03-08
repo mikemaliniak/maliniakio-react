@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 // Material-UI Componenets and styling
 import { withStyles } from '@material-ui/styles';
 import clsx from 'clsx';
-import styles from './styles/Hero'; 
+import styles from './styles/Hero.style'; 
 
 class Hero extends Component {
     render () {
