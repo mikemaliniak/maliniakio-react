@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink }from 'react-router-dom';
+import { NavLink, Link }from 'react-router-dom';
 import PropTypes from 'prop-types';
 // Material-UI Componenets and styling
 import { withStyles } from '@material-ui/styles';
@@ -36,6 +36,7 @@ function NavBar(props) {
     return (
         <HideOnScroll {...props}>
             <AppBar component={"nav"} className={classes.root}>
+                <Link to="/">Logo Here</Link>
                 <NavLink to={'/'}>home</NavLink>
                 <NavLink to={'/projects'}>projects</NavLink>
                 <NavLink to={'/skills'}>skills</NavLink>
