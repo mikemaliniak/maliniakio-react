@@ -3,11 +3,13 @@ import { NavLink, Link }from 'react-router-dom';
 import PropTypes from 'prop-types';
 // Material-UI Componenets and styling
 import { withStyles } from '@material-ui/styles';
+import DeveloperModeIcon from '@material-ui/icons/DeveloperMode';
 import AppBar from '@material-ui/core/AppBar';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import Slide from '@material-ui/core/Slide';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import styles from './styles/Navbar.style'; 
+import MenuController from './MenuController';
 
 function HideOnScroll(props) {
   const { children } = props;
@@ -36,13 +38,18 @@ function NavBar(props) {
     return (
         <HideOnScroll {...props}>
             <AppBar component={"nav"} className={classes.root}>
-                <Link to="/">Logo Here</Link>
-                <NavLink to={'/'}>home</NavLink>
-                <NavLink to={'/projects'}>projects</NavLink>
-                <NavLink to={'/skills'}>skills</NavLink>
+                <Link to="/" className={classes.logo}>
+                    <DeveloperModeIcon />
+                    <span className={classes.logoText}></span>MALINIAK.IO</Link>
+                <div className={classes.linkContainer}>
+                    <NavLink exact to={'/'} className={classes.link} activeClassName={classes.linkActive}>home</NavLink>
+                    <NavLink to={'/projects'} className={classes.link} activeClassName={classes.linkActive}>projects</NavLink>
+                    <NavLink to={'/skills'} className={classes.link} activeClassName={classes.linkActive}>skills</NavLink>
+                </div>
                 <a href="https://github.com/mikemaliniak" target="_blank">
                     <GitHubIcon />
                 </a>
+                <MenuController />
             </AppBar>
         </HideOnScroll>
     );
