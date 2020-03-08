@@ -8,7 +8,7 @@ export default {
         '& a': {
             color: primary.contrastText,
             textDecoration: 'none',
-            display: 'inline'
+            display: 'inline',
         },
         '& a:hover': {
             cursor: 'pointer'

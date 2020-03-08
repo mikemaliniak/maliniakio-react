@@ -21,13 +21,13 @@ export default {
         bottom: '0',
         height: '100%',
         width: '100',
-        backgroundColor: 'red',
+        backgroundColor: '#333',
         opacity: '0.7'
     },
     
     title: {
         textTransform: 'uppercase',
-        color: 'red',
+        color: 'white',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',

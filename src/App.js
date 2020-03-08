@@ -20,6 +20,12 @@ import Projects from './components/Projects';
 import Skills from './components/Skills';
 
 class App extends Component {
+
+  componentDidMount() {
+    // Get Projects
+    this.props.getProjects();
+  }
+
   render () {
     return (
         <Router>
