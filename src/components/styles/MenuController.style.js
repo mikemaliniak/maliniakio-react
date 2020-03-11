@@ -23,11 +23,15 @@ export default {
             '&:nth-last-child(2)': {
                 transformOrigin: '0% 100%'
             }
+        },
+
+        '& svg': {
+            color: custom.primary
         }
     },
     menuOpen: {
         '& span': {
-            transform: 'rotate(45deg) translate(0px, -5px)',
+            transform: 'rotate(45deg) translate(0px, -5/px)',
 
             '&:nth-last-child(2)': {
                 opacity: 0,
@@ -38,5 +42,10 @@ export default {
                 transform: 'rotate(-45deg) translate(0, -1px)'
             }
         },
+
+        '& svg': {
+            color: 'black'
+        }
+
     }
 }

@@ -14,10 +14,12 @@ function MenuController(props) {
         [classes.menuOpen]: props.menuOpen
     })
     return (
-        <div className={menuClasses} onClick={props.toggleMenu}>
+        <div className={menuClasses} onClick={props.menuAction}>
+            whats ius
+            {props.children}
+            {/* <span></span>
             <span></span>
-            <span></span>
-            <span></span>
+            <span></span> */}
         </div>
     )
 }
@@ -26,4 +28,4 @@ const mapStateToProps = state => ({
     menuOpen: state.menuOpen
 })
 
-export default connect(mapStateToProps, { toggleMenu })(withStyles(styles)(MenuController));
+export default connect(mapStateToProps)(withStyles(styles)(MenuController));
