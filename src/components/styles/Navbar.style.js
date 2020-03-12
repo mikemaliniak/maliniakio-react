@@ -11,17 +11,16 @@ export default {
         padding: '2rem 1rem',
     },
     navContainer: {
+        display: 'none',
         backgroundColor: custom.white,
         [breakpoints.up('md')]: {
             display: 'flex',
-            height: 'auto',
-            width: 'auto'
+            opacity: 1
         }
     },
 
     navContainerOpen: {
         display: 'flex',
-        opacity: 0.95,
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
@@ -35,10 +34,10 @@ export default {
     },
 
     link: {
+        marginRight: '1rem',
         color: custom.black,
         textDecoration: 'none',
         transition: 'color 0.3s ease-in-out',
-
         '&:hover': {
             cursor: 'pointer',
             color: custom.primary
