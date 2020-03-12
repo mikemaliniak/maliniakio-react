@@ -1,11 +1,9 @@
 import { theme } from './Theme.style';
 
-const { palette: { primary }, breakpoints } = theme;
+const { breakpoints } = theme;
 
 export default {
     root: {
-        display: 'flex',
-        flexDirection: 'column',
         display: 'flex',
         flexDirection: 'column',
         [breakpoints.up('sm')]: {

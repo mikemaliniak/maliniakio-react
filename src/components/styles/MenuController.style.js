@@ -11,8 +11,7 @@ export default {
             height: '4px',
             marginBottom: '5px',
             position: 'relative',
-            background: '#232323',
-            borderRadius: '3px',            
+            background: custom.black,    
             transformOrigin: '4px 0px',            
             transition: 'transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease',
 
@@ -27,11 +26,17 @@ export default {
 
         '& svg': {
             color: custom.primary
+        },
+
+        '&:hover span':   {
+            background: custom.primary
         }
     },
     menuOpen: {
         '& span': {
-            transform: 'rotate(45deg) translate(0px, -5/px)',
+            '&:first-child': {
+                transform: 'rotate(45deg) translate(0, -5px)'
+            }, 
 
             '&:nth-last-child(2)': {
                 opacity: 0,
@@ -42,10 +47,5 @@ export default {
                 transform: 'rotate(-45deg) translate(0, -1px)'
             }
         },
-
-        '& svg': {
-            color: 'black'
-        }
-
     }
 }

@@ -4,9 +4,7 @@ import red from '@material-ui/core/colors/red';
 export const theme = createMuiTheme({
     custom: {
       primary: red[500],
-      colors: {
-        white: '#fff',
-        black: '#222'
-      } 
+      black: '#222222',
+      white: '#ffffff'
     }
 })

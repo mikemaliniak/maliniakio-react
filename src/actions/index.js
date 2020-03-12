@@ -18,6 +18,7 @@ export const getProjects = () => dispatch => {
 
 // TOGGLE MENU
 export const toggleMenu = () => dispatch => {
+    document.body.classList.toggle('navOpen');
     dispatch({
         type: TOGGLE_MENU,
     });
@@ -25,6 +26,7 @@ export const toggleMenu = () => dispatch => {
 
 // OPEN MENU
 export const openMenu = () => dispatch => {
+    document.body.classList.add('navOpen');
     dispatch({
         type: OPEN_MENU,
     });
@@ -32,6 +34,7 @@ export const openMenu = () => dispatch => {
 
 // CLOSE MENU
 export const closeMenu = () => dispatch => {
+    document.body.classList.remove('navOpen');
     dispatch({
         type: CLOSE_MENU,
     });

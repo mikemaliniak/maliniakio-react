@@ -1,20 +1,17 @@
 import React from 'react';
 import { NavLink, Link }from 'react-router-dom';
 import { connect } from 'react-redux';
+import classnames from 'classnames';
 import PropTypes from 'prop-types';
 // Material-UI Componenets and styling
 import { withStyles } from '@material-ui/styles';
 import DeveloperModeIcon from '@material-ui/icons/DeveloperMode';
-import MenuIcon from '@material-ui/icons/Menu';
-import CloseIcon from '@material-ui/icons/Close';
 import AppBar from '@material-ui/core/AppBar';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import Slide from '@material-ui/core/Slide';
-import GitHubIcon from '@material-ui/icons/GitHub';
 import styles from './styles/Navbar.style'; 
 import MenuController from './MenuController';
-import { openMenu, closeMenu } from '../actions';
-
+import { closeMenu } from '../actions/index';
 
 function HideOnScroll(props) {
   const { children } = props;
@@ -39,25 +36,21 @@ HideOnScroll.propTypes = {
 };
 
 function NavBar(props) {
-    const { classes, menuOpen } = props;
+    const { classes } = props;
     return (
         <HideOnScroll {...props}>
             <AppBar component={"nav"} className={classes.root}>
                 <Link to="/" className={classes.logo}>
                     <DeveloperModeIcon />
                     <span className={classes.logoText}></span>MALINIAK.IO</Link>
-                <div className={classes.linkContainer}>
+                <div className={classnames(classes.navContainer, {[classes.navContainerOpen]: props.menuOpen})}>
                     <NavLink exact to={'/'} className={classes.link} activeClassName={classes.linkActive} onClick={props.closeMenu}>home</NavLink>
                     <NavLink to={'/projects'} className={classes.link} activeClassName={classes.linkActive} onClick={props.closeMenu}>projects</NavLink>
                     <NavLink to={'/skills'} className={classes.link} activeClassName={classes.linkActive} onClick={props.closeMenu}>skills</NavLink>
-                    { menuOpen && (<MenuController menuAction={props.closeMenu}><CloseIcon /></ MenuController>)}
                 </div>
-                <a href="https://github.com/mikemaliniak" target="_blank">
-                    <GitHubIcon />
-                </a>
-                <MenuController menuAction={props.openMenu}>
-                  <MenuIcon />
-                </ MenuController>
+                <span className={classes.menuController}>
+                  <MenuController />
+                </span>
             </AppBar>
         </HideOnScroll>
     );
@@ -67,4 +60,4 @@ const mapStateToProps = state => ({
   menuOpen: state.menuOpen
 })
 
-export default connect(mapStateToProps, { openMenu, closeMenu })(withStyles(styles)(NavBar));
+export default connect(mapStateToProps, { closeMenu })(withStyles(styles)(NavBar));
