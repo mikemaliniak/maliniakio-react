@@ -41,12 +41,38 @@ function NavBar(props) {
         <HideOnScroll {...props}>
             <AppBar component={"nav"} className={classes.root}>
                 <Link to="/" className={classes.logo}>
-                    <DeveloperModeIcon />
-                    <span className={classes.logoText}></span>MALINIAK.IO</Link>
-                <div className={classnames(classes.navContainer, {[classes.navContainerOpen]: props.menuOpen})}>
-                    <NavLink exact to={'/'} className={classes.link} activeClassName={classes.linkActive} onClick={props.closeMenu}>home</NavLink>
-                    <NavLink to={'/projects'} className={classes.link} activeClassName={classes.linkActive} onClick={props.closeMenu}>projects</NavLink>
-                    <NavLink to={'/skills'} className={classes.link} activeClassName={classes.linkActive} onClick={props.closeMenu}>skills</NavLink>
+                    {/* <DeveloperModeIcon /> */}
+                    <span className={classes.logoText}>
+                      MALINIAK.<span className={classes.logoTextIO}>IO</span>
+                    </span>
+                </Link>
+                <div 
+                  className={classnames(
+                      classes.navContainer, 
+                      {[classes.navContainerOpen]: props.menuOpen}
+                  )}
+                >
+                  <NavLink 
+                    exact to={'/'} 
+                    className={classes.link} activeClassName={classes.linkActive} 
+                    onClick={props.closeMenu}
+                  >
+                    home
+                  </NavLink>
+                  <NavLink 
+                    to={'/projects'} 
+                    className={classes.link} 
+                    activeClassName={classes.linkActive} 
+                    onClick={props.closeMenu}>
+                      projects
+                  </NavLink>
+                  <NavLink 
+                    to={'/skills'} 
+                    className={classes.link} 
+                    activeClassName={classes.linkActive} 
+                    onClick={props.closeMenu}>
+                      skills
+                  </NavLink>
                 </div>
                 <span className={classes.menuController}>
                   <MenuController />

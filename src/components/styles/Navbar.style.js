@@ -62,6 +62,9 @@ export default {
             color: custom.primary
         }
     },
+    logoTextIO: {
+        color: custom.primary
+    },
     menuController: {
         display: 'inline-block',
         [breakpoints.up('md')]: {
