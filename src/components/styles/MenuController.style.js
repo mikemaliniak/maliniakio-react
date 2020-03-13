@@ -7,7 +7,7 @@ export default {
         cursor: 'pointer',
         '& span': {
             display: 'block',
-            width: '33px',
+            width: '28px',
             height: '4px',
             marginBottom: '5px',
             position: 'relative',
@@ -35,7 +35,7 @@ export default {
     menuOpen: {
         '& span': {
             '&:first-child': {
-                transform: 'rotate(45deg) translate(0, -5px)'
+                transform: 'rotate(45deg) translate(0, -3px)'
             }, 
 
             '&:nth-last-child(2)': {
@@ -44,7 +44,7 @@ export default {
             },
 
             '&:last-of-type': {
-                transform: 'rotate(-45deg) translate(0, -1px)'
+                transform: 'rotate(-45deg) translate(0, -4px)'
             }
         },
     }
