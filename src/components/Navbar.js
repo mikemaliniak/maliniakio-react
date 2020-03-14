@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
+import debounce from '../helpers/debounce';
 import { NavLink, Link }from 'react-router-dom';
 import { connect } from 'react-redux';
 import classnames from 'classnames';
@@ -37,9 +38,26 @@ HideOnScroll.propTypes = {
 
 function NavBar(props) {
     const { classes } = props;
+    const navRef = useRef()
+
+    useEffect(() => {
+
+      // Add initial padding and add event listener for future resize events
+      // shuld they occur
+      addBodyTopPadding();
+      window.addEventListener('resize', debounce(() => {
+        addBodyTopPadding();
+      }, 500))
+    });
+
+    const addBodyTopPadding = () => {
+      let navHeight = navRef.current.clientHeight;
+      document.body.style.paddingTop = `${navHeight - 5}px`;
+    }
+
     return (
         <HideOnScroll {...props}>
-            <AppBar component={"nav"} className={classes.root}>
+            <AppBar component={"nav"} className={classes.root} ref={navRef}>
                 <Link to="/" className={classes.logo}>
                     {/* <DeveloperModeIcon /> */}
                     <span className={classes.logoText}>

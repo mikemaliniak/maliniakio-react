@@ -12,7 +12,7 @@ class Home extends Component {
         }
         return (
             <div>
-                <Hero {...heroProps} />
+                <Hero />
                 <ContentPanel />
                 <section>
                     <img src={process.env.PUBLIC_URL + '/assets/images/image01.jpg'} style={{width: '100%'}}/>

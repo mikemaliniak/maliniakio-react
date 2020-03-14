@@ -9,7 +9,6 @@ import { getProjects } from './actions';
 
 // Styling
 import './components/styles/App.scss';
-import './App.css';
 
 // Components
 import Home from './components/Home'

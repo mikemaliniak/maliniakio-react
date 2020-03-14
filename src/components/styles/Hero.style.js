@@ -1,16 +1,25 @@
-import Background from './img/Clouds.jpg';
+import Background from './img/mike.jpg';
+import { theme } from './Theme.style';
+
+const { custom, breakpoints } = theme;
 
 export default {
 
     root: {
-        height: '80vh',
+        height: '20vh',
         backgroundImage: `url(${Background})`,
-        backgroundPosition: 'center bottom',
+        backgroundPosition: 'center top',
         backgroundSize: 'cover',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        position: 'relative'
+        position: 'relative',
+        [breakpoints.up('sm')]: {
+            height: '40vh'
+        },
+        [breakpoints.up('md')]: {
+            height: '60vh'
+        }
     },
 
     overlay: {
@@ -33,7 +42,8 @@ export default {
         justifyContent: 'center',
         alignItems: 'center',
         position: 'relative',
-        zIndex: '2'
+        zIndex: '2',
+        textShadow: '1px 1px #222'
     },
 
     titleMain: {
