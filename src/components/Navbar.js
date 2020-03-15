@@ -43,7 +43,7 @@ function NavBar(props) {
     useEffect(() => {
 
       // Add initial padding and add event listener for future resize events
-      // shuld they occur
+      // should they occur
       addBodyTopPadding();
       window.addEventListener('resize', debounce(() => {
         addBodyTopPadding();
