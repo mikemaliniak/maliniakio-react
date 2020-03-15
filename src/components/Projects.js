@@ -7,14 +7,14 @@ class Projects extends Component {
         const { projects } = this.props;
         return (
             <div>
-                <h1>PROJECTS@@@</h1>
-                <h1>PROJECTS@@@</h1>
-                {projects.map(project => (
-                    <ProjectCard 
-                        key={project.id}
-                        name={project.name}
-                    />
-                ))}
+                <section>
+                    {projects.map(project => (
+                        <ProjectCard 
+                            key={project.id}
+                            name={project.name}
+                        />
+                    ))}
+                </section>
             </div>
         );
     }

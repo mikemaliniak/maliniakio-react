@@ -7,9 +7,16 @@ import styles from './styles/Hero.style';
 
 class Hero extends Component {
     render () {
-        const {classes, subTitle, mainTitle} = this.props;
+        const {classes, subTitle, mainTitle, customStyles } = this.props;
+        const heroClasses = clsx({
+            [classes.root]: true,
+            ['l-wrapper']: true
+        });
         return ( 
-                <section className={clsx(classes.root, 'l-wrapper')}>
+                <section 
+                    className={heroClasses} 
+                    style={{...customStyles}}
+                >
                     <div className={classes.overlay}></div>
                     <h1 className={classes.title}>
                         <span className={classes.titleSub}>{subTitle}</span>

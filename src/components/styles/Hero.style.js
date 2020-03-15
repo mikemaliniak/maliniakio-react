@@ -1,4 +1,3 @@
-import Background from './img/mike.jpg';
 import { theme } from './Theme.style';
 
 const { custom, breakpoints } = theme;
@@ -7,7 +6,6 @@ export default {
 
     root: {
         height: '20vh',
-        backgroundImage: `url(${Background})`,
         backgroundPosition: 'center top',
         backgroundSize: 'cover',
         display: 'flex',

@@ -7,12 +7,13 @@ import ContentPanel from './ContentPanel';
 class Home extends Component {
     render() {
         const heroProps = {
-            mainTitle: "success",
-            subTitle: "ambition is the first step towards"
+            customStyles: {
+                backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/mike.jpg)`
+            }
         }
         return (
             <div>
-                <Hero />
+                <Hero {...heroProps}/>
                 <ContentPanel />
                 <section>
                     <img src={process.env.PUBLIC_URL + '/assets/images/image01.jpg'} style={{width: '100%'}}/>
