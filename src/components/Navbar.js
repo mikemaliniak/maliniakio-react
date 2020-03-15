@@ -92,7 +92,7 @@ function NavBar(props) {
                       skills
                   </NavLink>
                   <NavLink 
-                    to={'/'} 
+                    to={'/contact'} 
                     className={classes.link} 
                     activeClassName={classes.linkActive} 
                     onClick={props.closeMenu}>
