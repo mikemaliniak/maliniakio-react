@@ -7,7 +7,7 @@ import styles from './styles/ContentPanel.style';
 const ContentPanel = (props) => {
     const { classes } = props;
     return ( 
-        <section className="l-wrapper">
+        <section className={classNames(classes.wrapper, 'l-wrapper')}>
             <div className={classNames(classes.root, 'l__container')}>
                 <div className={classNames(classes.col, classes.textOuter)}>
                     <div className={classes.textInner}>

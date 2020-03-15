@@ -1,12 +1,14 @@
 $breakpoints: (
-  'sm':  ( min-width:  767px ),
-  'md': ( min-width:  992px ),
-  'lg':  ( min-width: 1200px )
+  'sm':  ( min-width:  600px ),
+  'md': ( min-width:  960px ),
+  'lg':  ( min-width: 1280px ),
+  'xl': ( min-width: 1920px )
 ) !default;
 
-$max-width: 1440px;
+$max-width: 1200px;
 
 // COLORS
 
 $color-white: #fff;
-$color-black: #000
+$color-black: #000;
+$color-grey: #282828;

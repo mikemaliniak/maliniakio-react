@@ -10,6 +10,9 @@ export default {
             flexDirection: 'row'
         }
     },
+    wrapper: {
+        backgroundColor: theme.custom.white
+    },
     col: {
         padding: '2rem 1rem'
     },
