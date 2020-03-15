@@ -91,6 +91,13 @@ function NavBar(props) {
                     onClick={props.closeMenu}>
                       skills
                   </NavLink>
+                  <NavLink 
+                    to={'/'} 
+                    className={classes.link} 
+                    activeClassName={classes.linkActive} 
+                    onClick={props.closeMenu}>
+                      contact
+                  </NavLink>
                 </div>
                 <span className={classes.menuController}>
                   <MenuController />
