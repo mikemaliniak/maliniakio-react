@@ -16,7 +16,8 @@ class Home extends Component {
                 <Hero {...heroProps}/>
                 <BlankPanel>
                     <div>
-                        <h1>Hi, My name is Mike and I'm a Frontend? Front-end? Front End? Developer</h1>
+                        <h1 style={{fontWeight: 200}}>Hi, My name is Mike and I'm a Frontend? Front-end? Front End? Developer</h1>
+                        <p>...more to come</p>
                     </div>
                 </BlankPanel>
             </div>

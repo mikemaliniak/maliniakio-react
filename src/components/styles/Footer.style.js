@@ -9,6 +9,10 @@ export default {
         justifyContent: "space-around",
         '& svg': {
             color: custom.white
+        },
+        '& svg:hover': {
+            color: custom.primary,
+            cursor: "pointer"
         }
     }
 }

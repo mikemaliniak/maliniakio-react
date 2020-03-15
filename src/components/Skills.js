@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import BlankPanel from './BlankPanel'
 
 function mapStateToProps(state) {
     return {
@@ -10,9 +11,12 @@ function mapStateToProps(state) {
 class Skills extends Component {
     render() {
         return (
-            <div>
-                Skills that I possess!
-            </div>
+            <BlankPanel>
+                <div>
+                    <h1 style={{fontWeight: 200}}>Skills pay the bills..</h1>
+                    <p>...more to come</p>
+                </div>
+            </BlankPanel>
         );
     }
 }
