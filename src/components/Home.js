@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 // Components
 import Hero from './Hero';
-import ContentPanel from './ContentPanel';
+import BlankPanel from './BlankPanel';
 
 class Home extends Component {
     render() {
@@ -14,7 +14,11 @@ class Home extends Component {
         return (
             <div>
                 <Hero {...heroProps}/>
-                <ContentPanel />
+                <BlankPanel>
+                    <div>
+                        <h1>Hi, My name is Mike and I'm a Frontend? Front-end? Front End? Developer</h1>
+                    </div>
+                </BlankPanel>
             </div>
         );
     }

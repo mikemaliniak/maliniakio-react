@@ -10,7 +10,7 @@ class Hero extends Component {
         const {classes, subTitle, mainTitle, customStyles } = this.props;
         const heroClasses = clsx({
             [classes.root]: true,
-            ['l-wrapper']: true
+            ['l__wrapper']: true
         });
         return ( 
                 <section 

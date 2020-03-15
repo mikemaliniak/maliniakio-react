@@ -1,8 +1,19 @@
 .l__wrapper {
     width: 100%;
+    background-color: $color-white;
+    &.footer {
+        background-color: $color-grey; 
+    }
 }
 
 .l__container {
     margin: 0 auto;
     max-width: $max-width; // TODO: make this a variable
+    padding: 2rem 1rem;
+    @include media('sm') {
+        padding: 3rem 1rem;
+    }
+    @include media('md') {
+        padding: 6rem 1rem;
+    }
 }

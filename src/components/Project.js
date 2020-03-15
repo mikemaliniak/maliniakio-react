@@ -22,7 +22,9 @@ class Project extends Component {
                 </div>
             )
         } else {
-            return <h1>No Bueno</h1>
+            return (
+                <h1>This project does not seem to exist...</h1>
+            )
         }
     }
 }

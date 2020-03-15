@@ -1,11 +1,13 @@
 import React from 'react';
+import BlankPanel from './BlankPanel'
+import WarningIcon from '@material-ui/icons/Warning';
 
 const NotFound = () => {
     return ( 
         <div>
-            404: Page not found
-            404: Page not found
-            404: Page not found
+            <BlankPanel>
+                <WarningIcon/><h6>404: Page not found</h6>
+            </BlankPanel>
         </div>
      );
 }
