@@ -7,11 +7,11 @@ import styles from './styles/Hero.style';
 
 class Hero extends Component {
     render () {
-        const {classes, subTitle, mainTitle, customStyles } = this.props;
+        const {classes, subTitle, mainTitle, customStyles, reduceSize } = this.props;
         const heroClasses = clsx({
             [classes.root]: true,
-            ['l__wrapper']: true
-        });
+            [classes.reduceSize]: reduceSize
+        }, 'l__wrapper');
         return ( 
                 <section 
                     className={heroClasses} 

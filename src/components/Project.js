@@ -10,12 +10,12 @@ class Project extends Component {
         if (currProject) {
             return (
                 <div>
-                    <Hero customStyles={ { 
+                    <Hero customStyles={{ 
                         backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/${currProject.name}.png)`,
                         backgroundSize: 'contain',
                         backgroundRepeat: 'no-repeat',
                         backgroundColor: '#ffe300'}
-                        } />
+                        } reduceSize/>
                     <div>
                         <h1>{currProject.name}</h1>
                     </div>

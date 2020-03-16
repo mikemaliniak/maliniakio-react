@@ -1,6 +1,6 @@
 import { theme } from './Theme.style';
 
-const { custom, breakpoints } = theme;
+const { breakpoints } = theme;
 
 export default {
 
@@ -19,7 +19,14 @@ export default {
             height: '60vh'
         }
     },
-
+    reduceSize: {
+        [breakpoints.up('sm')]: {
+            height: '25vh'
+        },
+        [breakpoints.up('md')]: {
+            height: '30vh'
+        }
+    },
     overlay: {
         position: 'absolute',
         top: '0',

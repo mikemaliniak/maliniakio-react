@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import BlankPanel from './BlankPanel';
 import ProjectCard from './ProjectCard';
+import { theme } from './styles/Theme.style';
 
 class Projects extends Component {
     render() {
@@ -10,19 +11,17 @@ class Projects extends Component {
             <div>
                 <BlankPanel>
                     <div>
-                        <h1 style={{fontWeight: 200}}>Some stuff that I've done..</h1>
-                            {projects.map(project => <small key={project.id}>| {project.name} |</small>)}
-                            <p>...more to come</p>
+                        <h1 style={{fontWeight: 200, textAlign: 'center'}}>Some things I built, or helped build</h1>
                     </div>
                 </BlankPanel>
-                {/* <section>
+                <BlankPanel overrides={{backgroundColor: theme.custom.triad }}>
                     {projects.map(project => (
                         <ProjectCard 
                             key={project.id}
-                            name={project.name}
+                            {...project}
                         />
                     ))}
-                </section> */}
+                </BlankPanel>
             </div>
         );
     }

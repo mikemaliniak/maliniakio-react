@@ -6,7 +6,6 @@ import classnames from 'classnames';
 import PropTypes from 'prop-types';
 // Material-UI Componenets and styling
 import { withStyles } from '@material-ui/styles';
-import DeveloperModeIcon from '@material-ui/icons/DeveloperMode';
 import AppBar from '@material-ui/core/AppBar';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import Slide from '@material-ui/core/Slide';

@@ -1,26 +1,26 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import BlankPanel from './BlankPanel'
+import React, { Fragment } from 'react';
+import BlankPanel from './BlankPanel';
+import Hero from './Hero';
 
-function mapStateToProps(state) {
-    return {
-
-    };
-}
-
-class Skills extends Component {
-    render() {
+const Skills = () => {
+        const inlineStyles = {
+            backgroundColor: '#0169CA',
+            backgroundImage: `url(${process.env.PUBLIC_URL + '/assets/images/skills.jpg'})`,
+            backgroundPosition: 'right center',
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: 'contain'
+        }
         return (
-            <BlankPanel>
-                <div>
-                    <h1 style={{fontWeight: 200}}>Skills pay the bills..</h1>
-                    <p>...more to come</p>
-                </div>
-            </BlankPanel>
+            <Fragment>
+                <Hero customStyles={inlineStyles} mainTitle={"Skills"}/>
+                <BlankPanel>
+                    <div>
+                        <h1 style={{fontWeight: 200}}>Skills pay the bills..</h1>
+                        <p>...more to come</p>
+                    </div>
+                </BlankPanel>
+            </Fragment>
         );
-    }
 }
 
-export default connect(
-    mapStateToProps,
-)(Skills);
+export default Skills;
