@@ -5,7 +5,7 @@ import {
     CLOSE_MENU
 } from './types';
 
-import projects from '../data/projects';
+import projects from '../data';
 
 
 // GET PROJECTS

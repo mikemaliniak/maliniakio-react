@@ -1,4 +1,4 @@
 export const amgen = {
-    id: 3,
+    id: 'amgen',
     name: 'amgen'
 }
