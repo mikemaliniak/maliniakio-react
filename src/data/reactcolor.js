@@ -1,6 +1,6 @@
 import { v4 as uuidv4 } from 'uuid';
 
-export const tmb = {
+export const reactcolor = {
     id: uuidv4(),
-    name: 'tmb'
+    name: 'reactcolor'
 }

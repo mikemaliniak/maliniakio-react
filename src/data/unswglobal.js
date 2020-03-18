@@ -1,6 +1,6 @@
-import React from 'react';
+import { v4 as uuidv4 } from 'uuid';
 
 export const unswglobal = {
-    id: 2,
+    id: uuidv4,
     name: 'unswglobal'
 }

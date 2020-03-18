@@ -1,6 +1,6 @@
 import { v4 as uuidv4 } from 'uuid';
 
-export const tmb = {
+export const news = {
     id: uuidv4(),
-    name: 'tmb'
+    name: 'news'
 }
