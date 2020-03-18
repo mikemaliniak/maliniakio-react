@@ -9,11 +9,11 @@
 .l__container {
     margin: 0 auto;
     max-width: $max-width; // TODO: make this a variable
-    padding: 2rem 1rem;
+    padding: 2rem 1.5rem;
     @include media('sm') {
-        padding: 3rem 1rem;
+        padding: 3rem 2rem;
     }
     @include media('md') {
-        padding: 6rem 1rem;
+        padding: 4rem 2rem;
     }
 }

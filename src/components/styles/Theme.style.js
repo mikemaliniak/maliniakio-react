@@ -7,6 +7,7 @@ export const theme = createMuiTheme({
       triad: "#16B5B5",
       black: '#222222',
       white: '#ffffff',
-      grey: '#282828'
+      grey: '#282828',
+      grey2: '#444'
     }
 })

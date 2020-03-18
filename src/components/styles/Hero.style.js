@@ -53,8 +53,14 @@ export default {
 
     titleMain: {
         fontWeight: 800,
-        fontSize: '8rem',
-        letterSpacing: '1rem'
+        fontSize: '3rem',
+        letterSpacing: '1rem',
+        [breakpoints.up('sm')]: {
+            fontSize: '5rem'
+        },
+        [breakpoints.up('md')]: {
+            fontSize: '8rem'
+        }
     },
 
     titleSub: {
