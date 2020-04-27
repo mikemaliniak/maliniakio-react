@@ -18,9 +18,13 @@ const SplitPanel = (props) => {
                     <p>Lots to do, lots to do...but better to "do it, do it better, do it best" - Placeholder text for now</p>
                 </div>
             </div>
-            <div className={clsx(classes.SplitPanelOuterRight, 'l__container--split')}>
-                This is the Right
-            </div>
+            <div 
+                className={clsx(classes.SplitPanelOuterRight, 'l__container--split')} 
+                style={
+                    { backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/frontend2.jpg)`,
+                    backgroundSize: 'contain'
+                }}
+            />
         </section>
      );
 }
