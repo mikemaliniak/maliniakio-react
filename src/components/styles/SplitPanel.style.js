@@ -6,9 +6,10 @@ export default {
     wrapper: {},
     SplitPanelOuterLeft: {
         display: 'flex',
-        padding: '4rem 1.5rem',
+        padding: '2rem 1.5rem',
         [breakpoints.up('md')]: {
-            flexDirection: 'row-reverse'
+            justifyContent: 'flex-end',
+            padding: '8rem 1.5rem',
         }
     },
     SplitPanelInnerLeft: {

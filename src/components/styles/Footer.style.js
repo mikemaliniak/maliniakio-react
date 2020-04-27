@@ -1,6 +1,6 @@
 import { theme } from './Theme.style';
 
-const { custom } = theme;
+const { custom, breakpoints } = theme;
 
 export default {
 
@@ -16,6 +16,9 @@ export default {
         '& svg:hover': {
             color: custom.primary,
             cursor: "pointer"
+        },
+        [breakpoints.up('md')]: {
+            padding: '3rem 1.5rem',
         }
     }
 }

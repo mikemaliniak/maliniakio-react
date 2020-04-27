@@ -19,12 +19,9 @@ const SplitPanel = (props) => {
                 </div>
             </div>
             <div 
-                className={clsx(classes.SplitPanelOuterRight, 'l__container--split')} 
-                style={
-                    { backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/frontend2.jpg)`,
-                    backgroundSize: 'contain'
-                }}
-            />
+                className={clsx(classes.SplitPanelOuterRight, 'l__container--split')} >
+                    <img src={process.env.PUBLIC_URL + '/assets/images/frontend2.jpg'} alt=""/>
+                </div>
         </section>
      );
 }
