@@ -8,12 +8,32 @@
 
 .l__container {
     margin: 0 auto;
-    max-width: $max-width; // TODO: make this a variable
+    max-width: $max-width;
     padding: 2rem 1.5rem;
     @include media('sm') {
         padding: 3rem 2rem;
     }
     @include media('md') {
         padding: 4rem 2rem;
+    }
+}
+
+.l__wrapper--split {
+    display: flex;
+    flex-direction: column;
+    background-color: $color-white;
+    @include media('md') {
+        flex-direction: row;
+    }
+}
+
+.l__container--split {
+    width: 100%;
+    display: 'flex';
+    @include media('md') {
+        flex-basis: 100%;
+        > div {
+            max-width: $max-width/2;    
+        }
     }
 }

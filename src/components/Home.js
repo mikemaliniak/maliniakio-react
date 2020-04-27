@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 // Components
 import Hero from './Hero';
 import BlankPanel from './BlankPanel';
+import SplitPanel from './SplitPanel';
 
 class Home extends Component {
     render() {
@@ -14,12 +15,13 @@ class Home extends Component {
         return (
             <div>
                 <Hero {...heroProps}/>
-                <BlankPanel>
+                <SplitPanel />
+                {/* <BlankPanel>
                     <div>
                         <h1 style={{fontWeight: 200}}>Hi, My name is Mike and I'm a Frontend? Front-end? Front End? Developer</h1>
                         <p>...more to come</p>
                     </div>
-                </BlankPanel>
+                </BlankPanel> */}
             </div>
         );
     }
