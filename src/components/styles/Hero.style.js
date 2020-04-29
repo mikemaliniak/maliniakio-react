@@ -5,7 +5,7 @@ const { breakpoints } = theme;
 export default {
 
     root: {
-        height: '20vh',
+        height: '30vh',
         backgroundPosition: 'center top',
         backgroundSize: 'cover',
         display: 'flex',
@@ -16,7 +16,7 @@ export default {
             height: '40vh'
         },
         [breakpoints.up('md')]: {
-            height: '60vh'
+            height: '80vh'
         }
     },
     reduceSize: {

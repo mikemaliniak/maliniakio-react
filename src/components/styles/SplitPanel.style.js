@@ -13,6 +13,44 @@ export default {
         }
     },
     SplitPanelInnerLeft: {
-
+        display: 'flex',
+        alignItems: 'center',
+        [breakpoints.up('md')]: {
+            '& div': {
+                paddingRight: '2rem'
+            }
+        },
+        '& h2': {
+            position: 'relative'
+        },
+        '& h2:before': {
+            content: '""',
+            display: 'block',
+            position: 'absolute',
+            top: '-1.25rem',
+            left: 0,
+            width: '1.5rem',
+            height: '0.25rem',
+            backgroundColor: custom.primary
+        }
+    },
+    SplitPanelOuterRight: {
+        display: 'flex',
+        alignItems: 'center',
+        '& img': {
+            width: '80%',
+            margin: '0 auto'
+        }
+    },
+    link: {
+        fontWeight: 800,
+        textDecoration: 'none',
+        color: custom.primary,
+        '&:hover': {
+            cursor: 'pointer'
+        }
+    },
+    highLight: {
+        fontWeight: 'bolder'
     }
 }
