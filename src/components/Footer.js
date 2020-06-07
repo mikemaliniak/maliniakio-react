@@ -18,7 +18,7 @@ const Footer = props => {
                 <a href="https://github.com/mikemaliniak" target="_blank" rel="noopener noreferrer"><GitHubIcon /></a>
                 <a href="mailto:mike@maliniak.io" target="_blank" rel="noopener noreferrer"><MailOutlineIcon /></a>
                 <a href="https://www.linkedin.com/in/michael-maliniak-3a4b2258/" target="_blank" rel="noopener noreferrer"><LinkedInIcon /></a>
-                <small>&copy; 2020: Nah, not really, this is just for aesthetic balance! Feel free to copy and use whatever you need.</small>
+                {/* <small>&copy; 2020: Nah, not really, this is just for aesthetic balance! Feel free to copy and use whatever you need.</small> */}
             </footer>
         </BlankPanel>
     );

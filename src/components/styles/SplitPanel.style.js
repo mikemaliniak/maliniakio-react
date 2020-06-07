@@ -6,6 +6,7 @@ export default {
     wrapper: {},
     SplitPanelOuterLeft: {
         display: 'flex',
+        boxSizing: 'border-box',
         padding: '2rem 1.5rem',
         [breakpoints.up('md')]: {
             justifyContent: 'flex-end',

@@ -6,7 +6,7 @@ export default {
 
     root: {
         display: "flex",
-        justifyContent: "flex-start",
+        justifyContent: "center",
         alignItems: 'center',
         color: custom.white,
         '& svg': {
@@ -19,6 +19,7 @@ export default {
         },
         [breakpoints.up('md')]: {
             padding: '3rem 1.5rem',
+            justifyContent: "flex-start",
         }
     }
 }
