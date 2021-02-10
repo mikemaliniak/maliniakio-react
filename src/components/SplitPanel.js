@@ -16,8 +16,8 @@ const SplitPanel = (props) => {
                 <div className={classes.SplitPanelInnerLeft}>
                     <div>
                     <h2>About me</h2>
-                    <p><span className={classes.highLight}>Hi, My name is Mike and I'm a Front End... Front-end... Frontend Developer.</span></p>
-                    <p> Have been working as a commercial frontend developer for the last several years, consistently expanding knowledge into full-stack domains, particular involving the MERN stack</p>
+                    <p><span className={classes.highLight}>Hi, My name is Mike and I am a Front End... Front-end... Frontend Developer.</span></p>
+                    <p>Have been working as a commercial frontend developer for the last several years, consistently expanding knowledge into full-stack domains, particular involving the MERN stack</p>
                     <p>Feel free to have a browse of my portfolio site where you'll find some of the <Link to='/projects' className={classes.link}>projects</Link> I've worked on, as well as some of the <Link to='/skills' className={classes.link}>skills &amp; tools</Link> I use day to day.</p>
                     <p>You can also get in touch <Link to='/contact' className={classes.link}>here</Link>.</p>
                     </div>
