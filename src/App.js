@@ -17,6 +17,7 @@ import Footer from './components/Footer';
 import Project from './components/Project';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
+import Contact from './components/Contact';
 // import NotFound from './components/NotFound';
 
 class App extends Component {
@@ -38,7 +39,7 @@ class App extends Component {
                 <Route exact path='/projects' component={ Projects }></Route>
                 <Route exact path='/project/:name' render={routeParams => <Project {...routeParams} />}></Route>
                 <Route exact path='/skills' component={ Skills }></Route>
-                <Route exact path='/contact' component={ Projects }></Route>
+                <Route exact path='/contact' component={ Contact }></Route>
                 {/* <Route component={ NotFound } /> */}
               </Switch>
             </div>

@@ -42,16 +42,5 @@ export default {
             width: '80%',
             margin: '0 auto'
         }
-    },
-    link: {
-        fontWeight: 800,
-        textDecoration: 'none',
-        color: custom.primary,
-        '&:hover': {
-            cursor: 'pointer'
-        }
-    },
-    highLight: {
-        fontWeight: 'bolder'
     }
 }

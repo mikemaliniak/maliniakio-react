@@ -1,36 +1,31 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
+import React, { Fragment } from 'react';
 // Components
 import Hero from './Hero';
-import BlankPanel from './BlankPanel';
 import SplitPanel from './SplitPanel';
+import { Link } from 'react-router-dom';
+import { withStyles } from '@material-ui/styles';
+import styles from './styles/Home.style'; 
 
-class Home extends Component {
-    render() {
-        const heroProps = {
-            customStyles: {
-                backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/mike.jpg)`
-            }
+const Home = (props) => {
+    const heroProps = {
+        customStyles: {
+            backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/mike.jpg)`
         }
-        return (
-            <div>
-                <Hero {...heroProps}/>
-                <SplitPanel />
-                {/* <BlankPanel>
-                    <div>
-                        <h1 style={{fontWeight: 200}}>Hi, My name is Mike and I'm a Frontend? Front-end? Front End? Developer</h1>
-                        <p>...more to come</p>
-                    </div>
-                </BlankPanel> */}
-            </div>
-        );
     }
+    const panelText = (
+        <Fragment>
+            <p><span className={props.classes.highLight}>Hi, My name is Mike and I am a Front End... Front-end... Frontend Developer.</span></p>
+            <p>Have been working as a commercial frontend developer for the last several years, consistently expanding knowledge into full-stack domains, particular involving the MERN stack</p>
+            <p>Feel free to have a browse of my portfolio site where you'll find some of the <Link to='/projects' className={props.classes.link}>projects</Link> I've worked on, as well as some of the <Link to='/skills' className={props.classes.link}>skills &amp; tools</Link> I use day to day.</p>
+            <p>You can also get in touch <Link to='/contact' className={props.classes.link}>here</Link>.</p>
+        </Fragment>
+    )
+    return (
+        <div>
+            <Hero {...heroProps}/>
+            <SplitPanel panelContentLeft={panelText} title="About me"/>
+        </div>
+    );
 }
 
-function mapStateToProps(state) {
-    return {
-
-    };
-}
-
-export default connect(mapStateToProps,{})(Home);
+export default withStyles(styles)(Home);
