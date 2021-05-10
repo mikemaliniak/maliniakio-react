@@ -7,7 +7,11 @@ import SplitPanel from './SplitPanel';
 const Contact = () => {
     const heroProps = {
         customStyles: {
-            backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/contact.jpeg)`
+            backgroundColor: '#96ECFC',
+            backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/contact.jpg)`,
+            backgroundPosition: 'bottom center',
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: 'contain'
         }
     }
     const panelText = (
@@ -18,7 +22,7 @@ const Contact = () => {
             <Hero {...heroProps} mainTitle={"Contact"}/>
             <SplitPanel 
                 panelContentLeft={panelText}
-                title="Get in touch..." 
+                title="Get in touch..."
             />
         </div>
     )

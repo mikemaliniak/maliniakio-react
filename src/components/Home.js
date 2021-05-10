@@ -23,7 +23,7 @@ const Home = (props) => {
     return (
         <div>
             <Hero {...heroProps}/>
-            <SplitPanel panelContentLeft={panelText} title="About me"/>
+            <SplitPanel panelContentLeft={panelText} title="About me" showImage/>
         </div>
     );
 }

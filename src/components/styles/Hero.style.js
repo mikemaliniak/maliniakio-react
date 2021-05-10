@@ -1,3 +1,4 @@
+import { Background } from 'react-parallax';
 import { theme } from './Theme.style';
 
 const { breakpoints } = theme;
@@ -48,13 +49,15 @@ export default {
         alignItems: 'center',
         position: 'relative',
         zIndex: '2',
-        textShadow: '1px 1px #222'
+        textShadow: '5px 5px rgba(0, 0, 0, 0.8)'
     },
 
     titleMain: {
         fontWeight: 800,
         fontSize: '3rem',
         letterSpacing: '1rem',
+        padding: '0 0.5rem',
+        textShadow: '3px 3px 8px rgba(0, 0, 0, 0.3), -3px -3px 8px rgba(0, 0, 0, 0.3)',
         [breakpoints.up('sm')]: {
             fontSize: '5rem'
         },

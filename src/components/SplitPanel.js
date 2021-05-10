@@ -6,7 +6,15 @@ import styles from './styles/SplitPanel.style';
 
 
 const SplitPanel = (props) => {
-    const { classes } = props;
+    const { classes, showImage } = props;
+    const renderImage = () => {
+        return (
+            <div 
+                className={clsx(classes.SplitPanelOuterRight, 'l__container--split')} >
+                    <img src={process.env.PUBLIC_URL + '/assets/images/mike-meditate.jpg'} alt="Mike Maliniak - React, Webpack, NodeJS, HTML5, VueJS, ES6, SASS, CSS3"/>
+            </div>
+        )
+    }
     return ( 
         <section className={
             clsx(classes.wrapper, 'l__wrapper--split')
@@ -19,10 +27,7 @@ const SplitPanel = (props) => {
                     </div>
                 </div>
             </div>
-            <div 
-                className={clsx(classes.SplitPanelOuterRight, 'l__container--split')} >
-                    <img src={process.env.PUBLIC_URL + '/assets/images/mike-meditate.jpg'} alt="Mike Maliniak - React, Webpack, NodeJS, HTML5, VueJS, ES6, SASS, CSS3"/>
-                </div>
+            {showImage && renderImage()}
         </section>
      );
 }

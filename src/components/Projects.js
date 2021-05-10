@@ -1,20 +1,24 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import BlankPanel from './BlankPanel';
+import Hero from './Hero';
 import ProjectCard from './ProjectCard';
 import { theme } from './styles/Theme.style';
 
 class Projects extends Component {
     render() {
         const { projects } = this.props;
+        const inlineStyles = {
+            backgroundColor: '#4FD4CF',
+            backgroundImage: `url(${process.env.PUBLIC_URL + '/assets/images/projects.jpg'})`,
+            backgroundPosition: 'center center',
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: 'contain'
+        }
         return (
             <div>
+                <Hero customStyles={inlineStyles} mainTitle={"Projects"}/>
                 <BlankPanel>
-                    <div>
-                        <h1 style={{fontWeight: 200, textAlign: 'center'}}>Some things I built, or helped build</h1>
-                    </div>
-                </BlankPanel>
-                <BlankPanel overrides={{backgroundColor: theme.custom.triad }}>
                     {projects.map(project => (
                         <ProjectCard 
                             key={project.id}
