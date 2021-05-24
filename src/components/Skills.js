@@ -10,8 +10,8 @@ import styles from './styles/Skills.style';
 const Skills = (props) => {
         const { classes } = props;
         const inlineStyles = {
-            backgroundColor: '#0C99E0',
-            backgroundImage: `url(${process.env.PUBLIC_URL + '/assets/images/skills.jpg'})`,
+            backgroundColor: '#92C4DD',
+            backgroundImage: `url(${process.env.PUBLIC_URL + '/assets/images/skills3.jpeg'})`,
             backgroundPosition: 'center center',
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'contain'
