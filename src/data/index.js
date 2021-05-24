@@ -9,6 +9,7 @@ import { wppaunz } from './wppaunz';
 import { deltatre } from './deltatre';
 
 export default [
+    deltatre,
     unswglobal,
     tmb,
     amgen,
@@ -16,6 +17,5 @@ export default [
     reactcolor,
     mernapp,
     news,
-    wppaunz,
-    deltatre
+    wppaunz
 ]

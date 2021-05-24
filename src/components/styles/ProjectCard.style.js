@@ -22,7 +22,7 @@ export default {
     },
     
     imgContainer: {
-        backgroundImage: `url('https://i1.wp.com/www.surfer.com/wp-content/uploads/2019/12/laura.jpg?')`,
+        backgroundImage: `url(${process.env.PUBLIC_URL + '/assets/images/skills3.jpeg'})`,
         backgroundSize: 'cover',
         position: 'relative',
         width: '100%',
