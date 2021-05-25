@@ -1,12 +1,16 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { withStyles } from '@material-ui/styles';
+import { makeStyles } from '@material-ui/core/styles';
 import styles from './styles/ProjectCard.style';
 
+const useStyles = (obj) => {
+    return  makeStyles(obj);
+}
+
 const ProjectCard = (props) => {
-    const { name, classes } = props;
+    const { name } = props;
+    const classes = useStyles(styles(name))();
     return (
-        <div>
+        <div className={classes.root}>
             <div className={classes.imgContainer}>
                 <div className={classes.imgDiv}>
                     <span>{name}</span>
@@ -20,4 +24,4 @@ const ProjectCard = (props) => {
     )
 }
 
-export default withStyles(styles)(ProjectCard);
+export default ProjectCard;
