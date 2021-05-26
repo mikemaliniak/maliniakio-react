@@ -13,11 +13,11 @@ const ProjectCard = (props) => {
         <div className={classes.root}>
             <div className={classes.imgContainer}>
                 <div className={classes.imgDiv}>
-                    <span>{name}</span>
+                <img src={process.env.PUBLIC_URL + `/assets/images/${name}.jpg`} alt={name} className={classes.img}/>
                 </div>
             </div>
             <div>
-                <h5>{name}</h5>
+                <h5 className={classes.title}>{name}</h5>
                 <small>Lorem Ipsum doodem cuteim inst a verofld...</small>
             </div>
         </div>
