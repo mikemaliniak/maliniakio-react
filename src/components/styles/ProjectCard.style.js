@@ -38,8 +38,10 @@ export default (name) => {
             }
         },
     
-        contentDiv: {
-            
+        textContainer: {
+            [breakpoints.up('md')]: {
+                paddingLeft: '2rem',
+            }
         },
 
         title: {

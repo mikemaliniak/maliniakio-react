@@ -33,7 +33,7 @@ const ProjectCard = (props) => {
                 <img src={process.env.PUBLIC_URL + `/assets/images/${name}.jpg`} alt={name} className={classes.img}/>
                 </div>
             </div>
-            <div>
+            <div className={classes.textContainer}>
                 <h3 className={classes.title}>{name}</h3>
                 {renderTags(tags)}
                 {renderDescription(description)}
