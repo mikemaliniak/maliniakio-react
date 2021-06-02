@@ -8,6 +8,9 @@ export default {
         fontWeight: 'bold',
         fontSize: '0.7rem'
     },
+    Commercial: {
+        backgroundColor: '#333'
+    },
     Node: {
         backgroundColor: 'blue'
     },
@@ -24,6 +27,6 @@ export default {
         backgroundColor: 'blue'
     },
     WordPress: {
-        backgroundColor: 'maroon'
+        backgroundColor: 'lightblue'
     },
 }

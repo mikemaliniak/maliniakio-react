@@ -19,7 +19,7 @@ const renderDescription = raw => {
 
 const renderTags = (tags) => {
     if(!tags) return null;
-    return tags.map(tag => <Tag key={tag} type={tag}/>)
+    return tags.sort().map(tag => <Tag key={tag} type={tag}/>)
 }
 
 const ProjectCard = (props) => {
