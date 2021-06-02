@@ -1,11 +1,12 @@
 export default {
     root: {
-        display: 'inline',
+        display: 'inline-block',
         marginRight: '5px',
         padding: '3px 6px',
         color: 'white',
         backgroundColor: 'red',
-        fontWeight: 'bold'
+        fontWeight: 'bold',
+        fontSize: '0.7rem'
     },
     Node: {
         backgroundColor: 'blue'
