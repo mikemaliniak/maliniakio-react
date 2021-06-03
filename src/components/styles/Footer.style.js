@@ -18,7 +18,7 @@ export default {
             cursor: "pointer"
         },
         [breakpoints.up('md')]: {
-            padding: '3rem 1.5rem',
+            padding: '3rem 0',
             justifyContent: "flex-start",
         }
     }
