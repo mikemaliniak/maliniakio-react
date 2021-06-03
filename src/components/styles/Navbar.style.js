@@ -37,10 +37,11 @@ export default {
         marginRight: '1rem',
         color: custom.black,
         textDecoration: 'none',
-        transition: 'color 0.3s ease-in-out',
+        transition: 'color 0.3s ease-in-out, font-weight 0.3s ease-in-out',
         '&:hover': {
             cursor: 'pointer',
-            color: custom.primary
+            color: custom.primary,
+            fontWeight: 'bolder'
         }
     },
     linkActive: {
