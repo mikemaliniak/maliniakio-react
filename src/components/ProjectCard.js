@@ -23,16 +23,15 @@ const renderTags = (tags) => {
 }
 
 const ProjectCard = (props) => {
-    const { name, description, tags } = props;
+    const { name, description, tags, extension } = props;
     const nameFormatted = name.replace(" ", "");
     const classes = useStyles(styles(name))();
+    const imgExtension = extension ? extension : 'jpg';
 
     return (
         <div className={classes.root} >
             <div className={classes.imgContainer}>
-                <div className={classes.imgDiv}>
-                <img src={process.env.PUBLIC_URL + `/assets/images/${nameFormatted}.jpg`} alt={name} className={classes.img}/>
-                </div>
+                <img src={process.env.PUBLIC_URL + `/assets/images/${nameFormatted}.${imgExtension}`} alt={name} className={classes.img}/>
             </div>
             <div className={classes.textContainer}>
                 <h3 className={classes.title}>{name}</h3>

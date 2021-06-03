@@ -17,17 +17,13 @@ export default (name) => {
         
         imgContainer: {
             width: '100%',
-            [breakpoints.up('md')]: {
-                width: '40%',
-                minWidth: '40%'
-            }
-        },
-    
-        imgDiv: {
             display: 'flex',
             justifyContent: 'center',
             [breakpoints.up('md')]: {
+                width: '40%',
+                minWidth: '40%',
                 justifyContent: 'flex-start',
+                alignItems: 'center'
             }
         },
 
