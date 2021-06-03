@@ -4,18 +4,20 @@ import { amgen } from './amgen';
 import { westrac } from './westrac';
 import { reactcolor } from './reactcolor';
 import { mernapp } from './mernapp';
-import { news } from './news';
+import { newscorp } from './newscorp';
 import { wppaunz } from './wppaunz';
 import { deltatre } from './deltatre';
+import { moreprojects } from './moreprojects';
 
 export default [
     deltatre,
     unswglobal,
+    newscorp,
     tmb,
     amgen,
     westrac,
     reactcolor,
     mernapp,
-    news,
-    wppaunz
+    wppaunz,
+    moreprojects
 ]

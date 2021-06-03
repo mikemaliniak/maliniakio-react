@@ -20,8 +20,8 @@ const useStyles = makeStyles({
 const Contact = () => {
     const heroProps = {
         customStyles: {
-            backgroundColor: '#96ECFC',
-            backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/contact.jpg)`,
+            backgroundColor: '#FF8362',
+            backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/contact.png)`,
             backgroundPosition: 'bottom center',
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'contain'

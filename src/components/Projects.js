@@ -10,7 +10,7 @@ class Projects extends Component {
         const { projects } = this.props;
         const inlineStyles = {
             backgroundColor: '#4FD4CF',
-            backgroundImage: `url(${process.env.PUBLIC_URL + '/assets/images/projects.jpg'})`,
+            backgroundImage: `url(${process.env.PUBLIC_URL + '/assets/images/projects.png'})`,
             backgroundPosition: 'center center',
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'contain'
