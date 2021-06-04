@@ -8,25 +8,28 @@ export default {
         fontWeight: 'bold',
         fontSize: '0.7rem'
     },
-    Commercial: {
+    commercial: {
         backgroundColor: '#333'
     },
-    Node: {
+    node: {
         backgroundColor: 'blue'
     },
-    React: {
+    react: {
         backgroundColor: 'purple'
     },
-    Redux: {
+    redux: {
         backgroundColor: 'orange'
     },
-    Vue: {
+    vue: {
         backgroundColor: '#00ff89'
     },
-    Vuex: {
+    vuex: {
         backgroundColor: 'blue'
     },
-    WordPress: {
+    wordpress: {
         backgroundColor: 'lightblue'
+    },
+    solution: {
+        backgroundColor: 'lightgreen'
     },
 }

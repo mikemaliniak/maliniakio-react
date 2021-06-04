@@ -5,12 +5,13 @@ import styles from './styles/Tag.style';
 
 const Tag = (props) => {
     const { type, classes } = props;
+    const formattedType = type.split(" ", 1)[0].toLowerCase();
     return (
         <small 
             key={type} 
             className={clsx(
                 classes.root,
-                classes[type]
+                classes[formattedType]
             )}>
             {type}
         </small>
