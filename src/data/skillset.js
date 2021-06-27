@@ -17,7 +17,11 @@ export default [
     },
     {
         skill: "VUE / VUEX",
-        desc: "I don't just use React, I like Vue too. Definitely enjoyed the projects that I have built using Vue and Vuex, have also dabbled with NuxtJS."
+        desc: "Who doesn't enjoy a good Vue! Definitely enjoyed the projects that I have built using Vue and Vuex, have also dabbled with NuxtJS."
+    },
+    {
+        skill: "TYPESCRIPT",
+        desc: "Have been writing code with TS more often than not over the past 2 years.  It has both pros and cons and have experienced both the benefits and added workload that it can add...nobody ever talks about how messy and unreadable the TS can get!"
     },
     {
         skill: "NODE.JS",

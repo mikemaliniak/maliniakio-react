@@ -14,7 +14,7 @@ const Home = (props) => {
     }
     const panelText = (
         <Fragment>
-            <p><span className={props.classes.highLight}>Hi, My name is Mike and I am a Front End... Front-end... Frontend Developer.</span></p>
+            <p><span className={props.classes.highLight}>Hi, My name is Mike and I am a Frontend, Front end... Front-end Developer.</span></p>
             <p>Have been working as a commercial frontend developer for just shy of a decade, consistently expanding knowledge into full-stack domains, particular involving the MERN stack</p>
             <p>Feel free to have a browse of my portfolio site where you'll find some of the <Link to='/projects' className={props.classes.link}>projects</Link> I've worked on, as well as some of the <Link to='/skills' className={props.classes.link}>skills &amp; tools</Link> I use day to day.</p>
             <p>You can also get in touch <Link to='/contact' className={props.classes.link}>here</Link>.</p>

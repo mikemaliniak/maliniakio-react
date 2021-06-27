@@ -1,7 +1,7 @@
 import { unswglobal } from './unswglobal';
 import { tmb } from './tmb';
 import { amgen } from './amgen';
-import { westrac } from './westrac';
+import { westracwppaunz } from './westracwppaunz';
 import { reactcolor } from './reactcolor';
 import { mernapp } from './mernapp';
 import { newscorp } from './newscorp';
@@ -15,9 +15,10 @@ export default [
     newscorp,
     tmb,
     amgen,
-    westrac,
-    reactcolor,
-    mernapp,
-    wppaunz,
-    moreprojects
+    // westracwppaunz,
+    // agency
+    // reactcolor,
+    // mernapp,
+    // wppaunz,
+    // moreprojects
 ]

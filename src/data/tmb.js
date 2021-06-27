@@ -3,6 +3,7 @@ import { v4 as uuidv4 } from 'uuid';
 export const tmb = {
     id: uuidv4(),
     name: 'TMB',
+    title: 'Teachers Mutual Bank',
     tags: ['Commercial', 'Gulp', 'Templating'],
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in mauris ex. Aliquam ac augue et risus posuere consectetur. Curabitur et augue porta, pharetra sem quis, suscipit tortor. Mauris ultrices sed neque ut congue. Nam ut eros commodo, elementum ex eget, porta augue. Praesent rhoncus nibh vitae arcu elementum, non faucibus dui tincidunt. Cras varius felis at orci lobortis rutrum. Vivamus augue sem, consequat non leo et, malesuada commodo odio.\n Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent pellentesque elementum blandit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla ut sodales mauris, in ornare purus. Suspendisse nec ante accumsan, dictum massa vel, porta quam.'
+    description: 'Fantastic project from start to finish, built on top of the Sitecore CMS.  Working cohesively with all stakeholders the project was designed, coded, project managed very holistically; all components were named, designed, coded and refrenced the same throughout the entire project allowing everyone to be on the same page at all times.  Still one of the best projects that I have worked on to this day and have held on to and try to incorporate in current projects many of the principles that made it work so well.'
 }
