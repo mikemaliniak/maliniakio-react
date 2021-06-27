@@ -48,6 +48,10 @@ export default [
         desc: " GUI and CLI Version Control"
     },
     {
+        skill: "GOOGLE ANALYTICS",
+        desc: " Well versed in integrating and extending Google Analytics Functionality."
+    },
+    {
         skill: "WORDPRESS, ASP.NET , SITECORE",
         desc: "Consistently working on projects that are built in concert with backend teams on varying CMS platforms, can even build a WP site from start to finish...the .NET stuff not so much."
     },
