@@ -24,7 +24,7 @@ const renderTags = (tags) => {
 
 const ProjectCard = (props) => {
     const { name, description, tags, extension, title } = props;
-    const nameFormatted = name.replace(" ", "");
+    const nameFormatted = name.replace(" ", "").toLowerCase();
     const classes = useStyles(styles(name))();
     const imgExtension = extension ? extension : 'jpg';
 
