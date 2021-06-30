@@ -15,6 +15,7 @@ export default [
     newscorp,
     tmb,
     amgen,
+    mernapp
     // westracwppaunz,
     // agency
     // reactcolor,

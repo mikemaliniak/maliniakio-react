@@ -6,30 +6,54 @@ export default {
         color: 'white',
         backgroundColor: 'red',
         fontWeight: 'bold',
-        fontSize: '0.7rem'
+        fontSize: '0.7rem',
     },
     commercial: {
-        backgroundColor: '#333'
+        backgroundColor: '#666666'
+    },
+    enterprise: {
+        backgroundColor: '#D6CD4D'
+    },
+    gulp: {
+        backgroundColor: '#991610'
+    },
+    fullstack: {
+        backgroundColor: '#CC7149'
+    },
+    noncommercial: {
+        backgroundColor: '#999999'
     },
     node: {
-        backgroundColor: 'blue'
+        backgroundColor: '#0D7A3B'
+    },
+    mongodb: {
+        backgroundColor: '#13aa52'
+    },
+    php: {
+        backgroundColor: '#CC5E0D'
     },
     react: {
-        backgroundColor: 'purple'
+        backgroundColor: '#61dafb'
     },
     redux: {
-        backgroundColor: 'orange'
+        backgroundColor: '#5681FD'
+    },
+    solutionarchitecture: {
+        backgroundColor: '#969536'
+    },
+    templating: {
+        backgroundColor: '#990F81'
     },
     vue: {
-        backgroundColor: '#00ff89'
+        backgroundColor: '#4fc08d'
     },
     vuex: {
-        backgroundColor: 'blue'
+        backgroundColor: '#4DD6BF'
+    },
+    webpack: {
+        backgroundColor: '#CC5660'
     },
     wordpress: {
-        backgroundColor: 'lightblue'
-    },
-    solution: {
-        backgroundColor: 'lightgreen'
-    },
+        backgroundColor: '#199699'
+    }
 }

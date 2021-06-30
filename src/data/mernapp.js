@@ -3,6 +3,8 @@ import { v4 as uuidv4 } from 'uuid';
 export const mernapp = {
     id: uuidv4(),
     name: 'mernapp',
-    tags: ['Non Commercial', 'Node', 'React', 'Redux', 'Fullstack'],
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in mauris ex. Aliquam ac augue et risus posuere consectetur. Curabitur et augue porta, pharetra sem quis, suscipit tortor. Mauris ultrices sed neque ut congue. Nam ut eros commodo, elementum ex eget, porta augue. Praesent rhoncus nibh vitae arcu elementum, non faucibus dui tincidunt. Cras varius felis at orci lobortis rutrum. Vivamus augue sem, consequat non leo et, malesuada commodo odio.\n Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent pellentesque elementum blandit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla ut sodales mauris, in ornare purus. Suspendisse nec ante accumsan, dictum massa vel, porta quam.'
+    title: 'DevConnector - MERN App',
+    tags: ['Non Commercial', 'Node', 'React', 'Redux', 'MongoDB', 'Fullstack'],
+    description: 'Commercially speaking, I predominantly work on the Front end of applications, if I want to dabble more in server side tech I generally have to build it myself.  Granted, this solution is built by following a step by step tutorial but it shows that I am familiar with certain concepts; building an API, connected to a MongoDB database and all the CRUD operations that connect the two. \n Furthermore, shows that I have had exposure to and am capable of connecting a client-side SPA built with React + Redux.  Also, unlike many commercial projects, I have access to and am able to show the source code. I tend to follow a set tutorial till completion, then extend and tweak the application to my own specifications.',
+    github: 'https://github.com/mikemaliniak/mern-app'
 }

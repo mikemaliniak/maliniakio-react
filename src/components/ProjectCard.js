@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import styles from './styles/ProjectCard.style';
 import Tag from './Tag';
 import { v4 as uuidv4 } from 'uuid';
+import GitHubIcon from '@material-ui/icons/GitHub';
 
 const useStyles = (obj) => {
     return  makeStyles(obj);
@@ -17,13 +18,19 @@ const renderDescription = raw => {
     });
 }
 
+const renderGitHubLink = (link) => {
+    return (
+        <a href={link} target="_blank" rel="noopener noreferrer"><GitHubIcon /></a>
+    )
+}
+
 const renderTags = (tags) => {
     if(!tags) return null;
     return tags.sort().map(tag => <Tag key={tag} type={tag}/>)
 }
 
 const ProjectCard = (props) => {
-    const { name, description, tags, extension, title } = props;
+    const { name, description, tags, extension, title, github } = props;
     const nameFormatted = name.replace(" ", "").toLowerCase();
     const classes = useStyles(styles(name))();
     const imgExtension = extension ? extension : 'jpg';
@@ -37,6 +44,7 @@ const ProjectCard = (props) => {
                 <h3 className={classes.title}>{title}</h3>
                 {renderTags(tags)}
                 {renderDescription(description)}
+                {github && renderGitHubLink(github)}
             </div>
         </div>
     )
