@@ -38,6 +38,9 @@ export default {
     redux: {
         backgroundColor: '#5681FD'
     },
+    sitecore: {
+        backgroundColor: '#360100'
+    },
     solutionarchitecture: {
         backgroundColor: '#969536'
     },
